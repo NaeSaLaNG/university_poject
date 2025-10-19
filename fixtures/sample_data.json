@@ -1,0 +1,189 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "admin",
+      "email": "admin@example.com",
+      "is_staff": true,
+      "is_superuser": true,
+      "is_active": true,
+      "first_name": "Администратор",
+      "last_name": "Системы"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "developer",
+      "email": "dev@example.com",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "first_name": "Разработчик",
+      "last_name": "Иванов"
+    }
+  },
+  {
+    "model": "tasks.project",
+    "pk": 1,
+    "fields": {
+      "name": "Веб-приложение Task Manager",
+      "description": "Разработка полнофункционального API для управления задачами",
+      "owner": 1,
+      "is_active": true,
+      "created_at": "2025-10-01T10:00:00Z",
+      "updated_at": "2025-10-09T15:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.project",
+    "pk": 2,
+    "fields": {
+      "name": "Мобильное приложение",
+      "description": "Разработка мобильного приложения на Flutter",
+      "owner": 2,
+      "is_active": true,
+      "created_at": "2025-10-05T12:00:00Z",
+      "updated_at": "2025-10-09T16:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 1,
+    "fields": {
+      "title": "Настроить Django проект",
+      "description": "Создать базовую структуру Django проекта с необходимыми приложениями",
+      "project": 1,
+      "creator": 1,
+      "assignee": 2,
+      "status": "completed",
+      "priority": 3,
+      "deadline": "2025-10-05T23:59:59Z",
+      "created_at": "2025-10-01T10:00:00Z",
+      "updated_at": "2025-10-03T14:20:00Z",
+      "completed_at": "2025-10-03T14:20:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 2,
+    "fields": {
+      "title": "Создать модели данных",
+      "description": "Разработать модели Project и Task с необходимыми полями",
+      "project": 1,
+      "creator": 1,
+      "assignee": 2,
+      "status": "completed",
+      "priority": 4,
+      "deadline": "2025-10-06T23:59:59Z",
+      "created_at": "2025-10-01T11:00:00Z",
+      "updated_at": "2025-10-04T16:30:00Z",
+      "completed_at": "2025-10-04T16:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 3,
+    "fields": {
+      "title": "Реализовать API endpoints",
+      "description": "Создать ViewSets для проектов и задач с фильтрацией",
+      "project": 1,
+      "creator": 1,
+      "assignee": 2,
+      "status": "in_progress",
+      "priority": 4,
+      "deadline": "2025-10-12T23:59:59Z",
+      "created_at": "2025-10-02T09:00:00Z",
+      "updated_at": "2025-10-09T10:00:00Z",
+      "completed_at": null
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 4,
+    "fields": {
+      "title": "Написать тесты",
+      "description": "Покрыть тестами основную функциональность API",
+      "project": 1,
+      "creator": 1,
+      "assignee": 2,
+      "status": "in_progress",
+      "priority": 3,
+      "deadline": "2025-10-15T23:59:59Z",
+      "created_at": "2025-10-03T10:00:00Z",
+      "updated_at": "2025-10-09T11:00:00Z",
+      "completed_at": null
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 5,
+    "fields": {
+      "title": "Настроить Docker",
+      "description": "Создать Dockerfile и docker-compose.yml",
+      "project": 1,
+      "creator": 1,
+      "assignee": null,
+      "status": "todo",
+      "priority": 2,
+      "deadline": "2025-10-18T23:59:59Z",
+      "created_at": "2025-10-04T14:00:00Z",
+      "updated_at": "2025-10-09T12:00:00Z",
+      "completed_at": null
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 6,
+    "fields": {
+      "title": "Написать документацию",
+      "description": "Создать README с полным описанием проекта",
+      "project": 1,
+      "creator": 1,
+      "assignee": 1,
+      "status": "review",
+      "priority": 2,
+      "deadline": "2025-10-20T23:59:59Z",
+      "created_at": "2025-10-05T09:00:00Z",
+      "updated_at": "2025-10-09T13:00:00Z",
+      "completed_at": null
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 7,
+    "fields": {
+      "title": "Дизайн интерфейса",
+      "description": "Создать макеты основных экранов приложения",
+      "project": 2,
+      "creator": 2,
+      "assignee": 2,
+      "status": "in_progress",
+      "priority": 3,
+      "deadline": "2025-10-25T23:59:59Z",
+      "created_at": "2025-10-05T14:00:00Z",
+      "updated_at": "2025-10-09T14:00:00Z",
+      "completed_at": null
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 8,
+    "fields": {
+      "title": "Настроить Flutter проект",
+      "description": "Инициализировать Flutter проект с необходимыми зависимостями",
+      "project": 2,
+      "creator": 2,
+      "assignee": null,
+      "status": "todo",
+      "priority": 4,
+      "deadline": "2025-10-22T23:59:59Z",
+      "created_at": "2025-10-06T10:00:00Z",
+      "updated_at": "2025-10-09T15:00:00Z",
+      "completed_at": null
+    }
+  }
+]
+
