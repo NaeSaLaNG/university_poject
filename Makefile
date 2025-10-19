@@ -1,8 +1,6 @@
-# Makefile для Task Manager API
-
 .PHONY: help install migrate run test clean docker-build docker-up docker-down
 
-help:  ## Показать эту справку
+help:
 	@echo "Доступные команды:"
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
